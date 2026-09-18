@@ -1,0 +1,203 @@
+[
+  {
+    "slug": "apollyon",
+    "category": "Systems engineering / Team leadership",
+    "short": "Competition rocketry",
+    "period": "2025–2026",
+    "role": "Propulsion Lead → Chief Engineer",
+    "team": "Mudd Amateur Rocketry Club",
+    "status": "Flown · 1st place",
+    "metrics": [
+      [
+        "1st",
+        "FAR Unlimited 2026"
+      ],
+      [
+        "11,492 ft",
+        "Measured apogee"
+      ],
+      [
+        "40",
+        "Team members"
+      ]
+    ],
+    "imageAlt": "Apollyon I team with the recovered vehicle after FAR Unlimited 2026",
+    "tools": "OpenRocket · RASAero II · MATLAB · COMSOL · SolidWorks"
+  },
+  {
+    "slug": "hat-trick",
+    "category": "Independent flight program / Verification",
+    "short": "Independent flight program",
+    "period": "Feb 2025 – Mar 2026",
+    "role": "Independent design, build & flight testing",
+    "team": "Personal project · NAR Level 2",
+    "status": "Six flights · two full recoveries",
+    "metrics": [
+      [
+        "6",
+        "Flights"
+      ],
+      [
+        "6,943 ft",
+        "Final flight apogee"
+      ],
+      [
+        "2",
+        "Complete recovery sequences"
+      ]
+    ],
+    "imageAlt": "Spencer standing alongside Hat Trick on the desert launch range",
+    "tools": "Machining · Composite bonding · Avionics integration · Flight analysis"
+  },
+  {
+    "slug": "atlas",
+    "category": "Embedded systems / Avionics",
+    "short": "Embedded systems",
+    "period": "2026 – Present",
+    "role": "Independent hardware & system designer",
+    "team": "Personal project",
+    "status": "Assembled & bench tested",
+    "metrics": [
+      [
+        "STM32H7",
+        "Custom embedded platform"
+      ],
+      [
+        "5",
+        "Complementary sensor devices"
+      ],
+      [
+        "8",
+        "PWM outputs tested under load"
+      ]
+    ],
+    "imageAlt": "Revised Atlas flight-computer CAD in perspective",
+    "tools": "KiCad · STM32 ecosystem · C/C++ · Embedded systems"
+  },
+  {
+    "slug": "gladius",
+    "category": "Flight simulation / Manufacturing",
+    "short": "Flight analysis & structures",
+    "period": "2024–2025",
+    "role": "Structures member · Simulation & manufacturing",
+    "team": "Mudd Amateur Rocketry Club",
+    "status": "Flown · 3rd place",
+    "metrics": [
+      [
+        "17,172 ft",
+        "Measured apogee"
+      ],
+      [
+        "17,180 ft",
+        "Predicted apogee"
+      ],
+      [
+        "3rd",
+        "FAR Unlimited 2025"
+      ]
+    ],
+    "imageAlt": "Gladius III team holding the completed vehicle at FAR 2025",
+    "tools": "OpenRocket · FEA · SolidWorks · Waterjet G12 · Composite bonding"
+  },
+  {
+    "slug": "jolly-roger",
+    "category": "Field robotics / Mechatronics",
+    "short": "Field robotics & instrumentation",
+    "period": "Course project",
+    "role": "Software, CAD, winch & sensing-circuit design",
+    "team": "Four-person course team",
+    "status": "Field tested",
+    "metrics": [
+      [
+        "4",
+        "Team members"
+      ],
+      [
+        "±0.1 in",
+        "Cable payout calibration"
+      ],
+      [
+        "10 in",
+        "Field profile depth"
+      ]
+    ],
+    "imageAlt": "Dimensioned Jolly Roger autonomous surface vehicle CAD",
+    "tools": "Teensy · Proportional control · CAD · Sensor calibration · Data analysis"
+  },
+  {
+    "slug": "drone-research",
+    "category": "Autonomy / Research / Engineering software",
+    "short": "GNC & flight research",
+    "period": "Jan – Dec 2025",
+    "role": "Undergraduate researcher · GNC & flight analysis",
+    "team": "Harvey Mudd Drone Lab",
+    "status": "40+ autonomous flights",
+    "metrics": [
+      [
+        "40+",
+        "Autonomous flight tests"
+      ],
+      [
+        "3D",
+        "Trajectory reconstruction"
+      ],
+      [
+        "2025",
+        "Research program"
+      ]
+    ],
+    "imageAlt": "Original three-dimensional GPS path from the drone beam-mapping research",
+    "tools": "Python · Forward simulation · Trajectory reconstruction · Flight-log analysis"
+  },
+  {
+    "slug": "unknown-rider",
+    "category": "Independent aerospace design",
+    "short": "Level 3 vehicle",
+    "period": "2026–present",
+    "role": "Independent designer",
+    "team": "Personal Level 3 certification project",
+    "status": "N1000W redesign",
+    "metrics": [
+      [
+        "N1000W",
+        "Current motor baseline"
+      ],
+      [
+        "4 in",
+        "Design diameter"
+      ],
+      [
+        "L3",
+        "Certification objective"
+      ]
+    ],
+    "imageAlt": "Preliminary Unknown Rider vehicle layout",
+    "tools": "COMSOL · RASAero II · OpenRocket · MATLAB · Simulink · SolidWorks"
+  },
+  {
+    "slug": "robocop",
+    "category": "Hardware restoration / Craft",
+    "short": "Electromechanical restoration",
+    "period": "2025",
+    "role": "Independent restoration & modification",
+    "team": "Personal project",
+    "status": "Completed",
+    "metrics": [
+      [
+        "84",
+        "Switch positions reworked"
+      ],
+      [
+        "168",
+        "Pins desoldered"
+      ],
+      [
+        "108",
+        "Replacement switches modified"
+      ]
+    ],
+    "imageAlt": "Finished Robocop mechanical keyboard",
+    "tools": "Soldering · Desoldering · Switch modification · Mechanical fit checks",
+    "download": "assets/robocop-documentation.pdf"
+  }
+]

@@ -1,0 +1,8 @@
+[
+ {"id":"01","motor":"J270W","altitude":3376,"outcome":"Ballistic impact","finding":"A machine screw replaced a shear pin and prevented separation.","response":"Rebuilt the forward airframe and avionics bay; added explicit fastener and packing checks.","success":false},
+ {"id":"02","motor":"J270W","altitude":3267,"outcome":"Ballistic impact","finding":"Ejection gas escaped through an adapter-plate gap.","response":"Traced and sealed the pressure path; revised the avionics structure for better impact protection.","success":false},
+ {"id":"03","motor":"J270W","altitude":3214,"outcome":"Early main deployment","finding":"The flight-computer configuration reacted too early near maximum velocity.","response":"Revised the event configuration and rebuilt the avionics stack.","success":false},
+ {"id":"04","motor":"J425R","altitude":3913,"outcome":"Early main deployment","finding":"Drogue overpressure sheared the main-retention pins.","response":"Retuned the deployment system and revised the retention and recovery hardware.","success":false},
+ {"id":"05","motor":"J250W","altitude":4071,"outcome":"Complete recovery","finding":"The revised system completed the intended recovery sequence.","response":"Verified the combined changes to procedures, sealing, configuration, and deployment hardware.","success":true},
+ {"id":"06","motor":"K535W","altitude":6943,"outcome":"Complete recovery","finding":"The recovery sequence repeated successfully at higher motor energy.","response":"Reached 6,943 ft on the same day as flight five and recovered the vehicle intact.","success":true}
+]
