@@ -45,6 +45,6 @@ export default {
  'The RGB LED is the outstanding hardware fault. I selected MOSFETs with the source and drain reversed for the intended circuit. The MCU control signals have been confirmed, so the correction is a component-level rework rather than a change to the processor. Replacement parts still need to be soldered onto the board.',
  'Atlas is bench tested, not yet flight qualified. Sensor fusion, launch and apogee detection, calibration routines, state estimation, control experiments, and the final operational logic remain software-development objectives. Environmental testing and integrated flight validation are also still ahead.',
  'For Unknown Rider, the intended role is an independent backup and data-acquisition platform alongside established recovery computers. That gives Atlas a path into flight experiments while preserving a separate primary recovery architecture.'
- ])+figures([['record-67-0','Portable case wiring and hardware mounting.','portrait'],['record-68-0','The assembled field-test package.','portrait']])+note('Current status','Major subsystems are functioning on the bench. The RGB LED needs rework; flight-software validation and environmental qualification are not yet complete.')}
+ ])+figures([['record-68-0','The assembled field-test package.','portrait']])+note('Current status','Major subsystems are functioning on the bench. The RGB LED needs rework; flight-software validation and environmental qualification are not yet complete.')}
  ]
 };
