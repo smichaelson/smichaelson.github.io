@@ -58,7 +58,7 @@ endobj
 endobj
 6 0 obj
 <<
-/Length 16786
+/Length 16814
 >>
 stream
 1 0 0 1 0 0 cm
@@ -1024,7 +1024,7 @@ BT
 9.6 TL
 (\054 a custom STM32\055based flight\055guidance computer for state estimation\054 active control\054 data logging\054 recovery deployment\054 live telemetry\054 GPS tracking\054) Tj
 T*
-(peripheral expansion\054 and guidance\055interface research\056) Tj
+(peripheral expansion\054 and guidance\055interface research for high\055power rocketry\056) Tj
 T*
 ET
 Q
@@ -1046,15 +1046,15 @@ BT
 0 0 0 rg
 /F3+0 7.75 Tf
 9.6 TL
-(Manufactured the computer and wrote system firmware and an RTOS\054 confirming ) Tj
+(Manufactured the system and wrote system firmware using FreeRTOS\054 confirming ) Tj
 /F2+0 7.75 Tf
 9.6 TL
 (full functionality) Tj
 /F3+0 7.75 Tf
 9.6 TL
-( of actuator control\054 sensors\054 Bluetooth\054 LoRa\054 GNSS\054 USB\055C\054 buzzer\054) Tj
+( of actuator control\054 sensors\054 Bluetooth\054 LoRa\054 GNSS\054 USB\055C\054) Tj
 T*
-(local storage\054 and GPIO under load\056) Tj
+(buzzer\054 local storage\054 and GPIO under load\056) Tj
 T*
 ET
 Q
@@ -1978,21 +1978,21 @@ xref
 0000000355 00000 n 
 0000000541 00000 n 
 0000000735 00000 n 
-0000017574 00000 n 
-0000017643 00000 n 
-0000017750 00000 n 
-0000018899 00000 n 
-0000019168 00000 n 
-0000056333 00000 n 
-0000057095 00000 n 
-0000058224 00000 n 
-0000058486 00000 n 
-0000105812 00000 n 
-0000106577 00000 n 
-0000107723 00000 n 
-0000108001 00000 n 
-0000143237 00000 n 
-0000144000 00000 n 
+0000017602 00000 n 
+0000017671 00000 n 
+0000017778 00000 n 
+0000018927 00000 n 
+0000019196 00000 n 
+0000056361 00000 n 
+0000057123 00000 n 
+0000058252 00000 n 
+0000058514 00000 n 
+0000105840 00000 n 
+0000106605 00000 n 
+0000107751 00000 n 
+0000108029 00000 n 
+0000143265 00000 n 
+0000144028 00000 n 
 trailer
 <<
 /Size 22
@@ -2001,5 +2001,5 @@ trailer
 /ID [ <165278872d394d3f27397fa5e830adf0> <165278872d394d3f27397fa5e830adf0> ]
 >>
 startxref
-144323
+144351
 %%EOF
