@@ -13,7 +13,8 @@ for(const filename of files.filter(f=>f.endsWith('.html'))){
   stats.videos++;
   const [,attributes,content]=match;
   if(!/\bcontrols\b/.test(attributes)||! /\bplaysinline\b/.test(attributes))issues.push(filename+': video needs playback controls and inline playback');
-  if(/\bautoplay\b/.test(attributes)||! /\bpreload="none"/.test(attributes))issues.push(filename+': video must load only on request');
+  if(/\bautoplay\b/.test(attributes)||! /\bpreload="none"/.test(attributes))issues.push(filename+': video must wait until it enters view');
+  if(!/\bmuted\b/.test(attributes)||! /\bdata-play-in-view\b/.test(attributes))issues.push(filename+': video needs muted playback when it enters view');
   for(const attribute of ['aria-labelledby','aria-describedby']){
    const ids=attributes.match(new RegExp(attribute+'="([^"]+)"'))?.[1]?.split(/\s+/);
    if(!ids?.length||ids.some(id=>!html.includes(`id="${id}"`)))issues.push(filename+': video has missing accessible text');

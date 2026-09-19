@@ -28,3 +28,32 @@ if(chapterLinks.length&&'IntersectionObserver'in window){
  const observer=new IntersectionObserver(entries=>{const visible=entries.filter(x=>x.isIntersecting);if(!visible.length)return;const id=visible[0].target.id;chapterLinks.forEach(a=>a.hash==='#'+id?a.setAttribute('aria-current','location'):a.removeAttribute('aria-current'));},{rootMargin:'-8% 0px -68% 0px'});
  document.querySelectorAll('.story-section').forEach(s=>observer.observe(s));
 }
+// Start videos in view, while preserving the reader's pause and sound choices.
+if('IntersectionObserver'in window){
+ const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+ document.querySelectorAll('video[data-play-in-view]').forEach(video=>{
+  let inView=false,pausedByReader=false,pausingForVisibility=false;
+  const updatePlayback=()=>{
+   if(!inView||document.hidden){
+    if(!video.paused){pausingForVisibility=true;video.pause();}
+    return;
+   }
+   if(!pausedByReader&&!video.ended&&!reducedMotion.matches&&video.paused){
+    // Browser preferences may still block autoplay; native controls remain usable.
+    video.play().catch(()=>{});
+   }
+  };
+  video.addEventListener('pause',()=>{
+   if(pausingForVisibility){pausingForVisibility=false;return;}
+   if(!video.ended)pausedByReader=true;
+  });
+  video.addEventListener('play',()=>{pausedByReader=false;});
+  const observer=new IntersectionObserver(entries=>{
+   const entry=entries.at(-1);
+   inView=entry.isIntersecting&&entry.intersectionRatio>=0.35;
+   updatePlayback();
+  },{threshold:[0,0.35]});
+  observer.observe(video);
+  document.addEventListener('visibilitychange',updatePlayback);
+ });
+}
