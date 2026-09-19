@@ -1,6 +1,6 @@
 export default {
  cover:'record-11-0',
- coverCaption:'The Gladius III team at FAR Unlimited 2025. The 11-foot vehicle flew on an AeroTech N1000W and finished third.',
+ coverCaption:'The Gladius III launch team at FAR Unlimited 2025. The 11-foot vehicle flew on an AeroTech N1000W and finished third.',
  ownership:'As a structures member, I owned the motor-selection and aerodynamic-profile simulations, designed and helped manufacture fins and bulkheads, integrated the motor, and conducted final assembly. I performed several structural analyses and used the team’s master CAD extensively; I did not create the entire vehicle model or every FEA result shown here.',
  source:'Engineering Portfolio Raw, pp. 1–15; August 28, 2026 résumé. Motor-trade outputs used an early mass model. The 17,180 ft prediction refers to the final model. FEA figures and master CAD include team contributions.',
  sections:[
@@ -24,7 +24,7 @@ export default {
  'The team’s master CAD provided a common dimensional baseline for analysis, manufacturing, and assembly order. I worked with it extensively for CFD and fabrication even though I did not author the complete model. The model captured the nose cone, airframe, fins, motor tube, retaining hardware, centering rings, bulkheads, and payload regions.',
  'The bulkheads did much more than divide the tube. They secured experiments, payloads, avionics, recovery hardware, and ejection charges, and included sealed passages for data cables and deployment leads. We combined structural analysis with the flight and aerodynamic loads to assess the interfaces and the components they carried.',
  'I helped design and manufacture the bulkheads from quarter-inch G12 fiberglass on the waterjet. The drawings translated the model into hole locations, diameters, and material geometry that the assembly actually depended on.'
- ])+figure('record-04-0','The team’s complete vehicle model, used as the shared reference for dimensions, analysis, and assembly.','drawing slim')+figures([['record-03-0','Manufacturing drawing for one G12 bulkhead.','drawing'],['record-03-1','A second bulkhead drawing, with its own mounting and clearance features.','drawing']])},
+ ])+figure('record-04-0','The team’s complete vehicle model, used as the shared reference for dimensions, analysis, and assembly.','drawing slim')+figures([['record-03-0','Manufacturing drawing for the aft G12 bulkhead.','drawing'],['record-03-1','Manufacturing drawing for the fore G12 bulkhead.','drawing']])},
  {id:'structure',nav:'Fin & airframe analysis',title:'A previous fin failure made the load path matter.',html:({paragraphs,figures,note})=>paragraphs([
  'Gladius II had lost its fins to aerodynamic loading, so the fin attachment could not be treated as a routine detail. The structural study compared notched and notchless attachment models, examining normal stress, shear stress, displacement, and strain. Aerodynamic models supplied estimated component loads; the FEA results were used to assess whether the geometry and materials could survive them with margin.',
  'The study also varied the solver setup, including large-displacement and soft-spring configurations. I ran several of these analyses, while the selected pairs below reflect the team’s structural work. Each pair compares notchless and notched attachments using the large-displacement configuration, grouped by the quantity being examined.'
@@ -35,12 +35,12 @@ export default {
  {id:'manufacture',nav:'Bonding & integration',title:'Making the joints the model assumed.',html:({paragraphs,figures})=>paragraphs([
  'Analysis was only useful if the finished bonds and interfaces resembled what had been modeled. I experimented with epoxy cure methods, surface preparation, and timing to improve fin strength for the weight added. I also designed and manufactured fins and bulkheads, then integrated the motor and helped bring the full vehicle through final assembly.',
  'This was the point where manufacturing and system knowledge became inseparable. A bulkhead’s location affected payload and recovery space; fin alignment affected aerodynamic behavior; and a bond’s quality determined whether the assumed load path actually existed.'
- ])+figures([['record-12-0','Preparing the motor hardware for integration.'],['record-15-0','The finished aft airframe and fin assembly.']])},
+ ])+figures([['record-12-0','Preparing the motor hardware for integration.'],['record-15-0','Gladius III at the club fair.']])},
  {id:'result',nav:'Flight & model comparison',title:'17,172 feet—and an intact recovery.',html:({paragraphs,figures,note,video})=>paragraphs([
  'Gladius III flew to 17,172 feet and placed third at FAR Unlimited 2025. I tracked the vehicle and joined the desert recovery. The final preflight model predicted 17,180 feet, only 8 feet above the measured result.'
  ])+video('gladius-launch-recap','The path to Gladius III','The club’s journey through earlier vehicles, final preparations, and the Gladius III launch and recovery at FAR Unlimited 2025. Video produced by teammate Jacob Fain.','2:12','With music',{muted:false})+paragraphs([
  'That is approximately 0.047% difference for this one apogee comparison. It was a strong result, but not a general accuracy guarantee for the simulation tools or every output in the model. The defensible comparison is specific: this vehicle, this flight, and the final predicted and measured apogees.',
  'The project gave me a practical foundation in motor trades, structural analysis, composite assembly, and launch integration. It also set up the next design step: Apollyon’s fin attachment moved away from slots, supported by physical joint tests and a deliberate alignment fixture.'
- ])+figures([['record-10-0','Gladius III leaving the launch rail.'],['record-14-0','The recovered vehicle in the desert.']])+figures([['record-13-0','Gladius III returned to the lab after the flight.']],'natural')}
+ ])+figures([['record-10-0','Gladius III leaving the launch tower.'],['record-14-0','The recovered vehicle in the desert.']])+figures([['record-13-0','Gladius III returned to the lab after the flight.']],'natural')}
  ]
 };
