@@ -47,4 +47,9 @@ footer a:focus-visible,.home-feature a:focus-visible{outline-color:#c5def5}
 @media(max-width:600px){.viewer-stage{width:min(100%,calc(63vh * var(--image-ratio,1)))}.figure-row.three .rotated-media{max-width:320px}.feature-photo{height:auto;aspect-ratio:4/3}.feature-photo img{object-fit:contain}.home-feature a:focus-visible{outline-color:var(--accent)}.feature-caption a:hover{color:var(--accent)}}
 @media(max-width:380px){.outcome-strip{display:grid;gap:18px}.outcome-strip>div{display:grid;grid-template-columns:110px minmax(0,1fr);align-items:baseline;gap:15px}.outcome-strip strong{font-size:28px}}
 .story-video{margin-block:40px}.video-heading{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 18px;margin-bottom:14px}.story-video .video-heading h3{margin:0;font-size:18px;line-height:1.35}.video-heading>span{font-size:12px;color:var(--muted);white-space:nowrap}.story-video video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#101c29}.story-video video:focus-visible{outline:2px solid var(--accent);outline-offset:6px}.story-video figcaption{font-size:13px;line-height:1.65;color:var(--muted);margin-top:12px;max-width:72ch}
+/* Center each caption on its media and balance standalone photographs. */
+.story-section>.story-figure{margin-inline:auto}
+.story-figure figcaption,.story-video figcaption,.about-portrait>.caption,.viewer-caption{text-align:center;margin-inline:auto}
+.figure-row>.story-figure:only-child{grid-column:1/-1;justify-self:center;width:calc((100% - 22px)/2)}
+@media(max-width:600px){.figure-row>.story-figure:only-child{width:100%}.figure-row.three>.story-figure:last-child:nth-child(odd){grid-column:1/-1;justify-self:center;width:calc((100% - 12px)/2)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
