@@ -19,7 +19,7 @@ const titles={
  robocop:['Project Robocop','Rebuilding a keyboard, one detail at a time.','A complete mechanical keyboard restoration: switch work, circuit-board rework, acoustic treatment, and reassembly.']
 };
 const covers={apollyon:'record-32-0','hat-trick':'record-33-0',atlas:'record-63-0',gladius:'record-15-0','jolly-roger':'record-81-2','drone-research':'record-75-0','unknown-rider':'record-72-0',robocop:'robocop-35-0'};
-const rotated=new Set(['record-62-0','record-68-0','robocop-23-0','robocop-24-0','robocop-25-0','robocop-25-1','robocop-26-0','robocop-28-0','robocop-30-0','robocop-31-0','robocop-31-1','robocop-32-0','robocop-33-0','robocop-34-0']);
+const rotated=new Set(['record-41-0','record-62-0','record-68-0','robocop-23-0','robocop-24-0','robocop-25-0','robocop-25-1','robocop-26-0','robocop-28-0','robocop-30-0','robocop-31-0','robocop-31-1','robocop-32-0','robocop-33-0','robocop-34-0']);
 function img(name,alt,eager=false,sizes='(max-width:760px) 92vw, 960px'){
  const m=images.find(x=>x.image===name);if(!m)throw Error('Unknown image '+name);
  const responsive=m.thumbWidth<m.width?` srcset="assets/thumbs/${name}.webp ${m.thumbWidth}w, assets/${name}.webp ${m.width}w" sizes="${sizes}"`:'';
